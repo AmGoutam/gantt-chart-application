@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 
 
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_API_KEY,
-    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-    appId: import.meta.env.VITE_APP_ID,
-    databasebaURL: import.meta.env.VITE_DATABASE_URL
+    apiKey: "AIzaSyAM27ZYoEc7S-7HM2fph2KAF9lgLYx4HnU",
+    authDomain: "gantt-chart-application.firebaseapp.com",
+    projectId: "gantt-chart-application",
+    storageBucket: "gantt-chart-application.firebasestorage.app",
+    messagingSenderId: "363452610058",
+    appId: "1:363452610058:web:179be8dc72a769868111f3",
+    // databasebaURL: "https//gantt-chart-application-default-rtdb.firebaseio.com"
 };
 const app = initializeApp(firebaseConfig);
 export default app;
