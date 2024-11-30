@@ -22,7 +22,6 @@ const CalendarTimeline = ({ tasks, editTask, deleteTask }) => {
     const [open, setOpen] = useState(false);
     const [taskId, setTaskId] = useState("");
 
-    // Show task details in an alert
     const showAllData = (itemId) => {
         const task = tasks.find((task) => task.id === itemId);
         const taskDetails = `
@@ -39,7 +38,6 @@ const CalendarTimeline = ({ tasks, editTask, deleteTask }) => {
         alert(taskDetails);
     };
 
-    // Groups and items will be derived from the tasks prop
     const groups = tasks.map((task) => ({
         id: task.id,
         title: task.status || "Default Group",
